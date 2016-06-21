@@ -70,13 +70,6 @@ var PathConfig = require('./grunt-settings.js');
         options: {
             spawn: false
         }
-      },
-      css: {
-        files: ['<%= config.cssDir %>**/*.css'],
-        tasks: ['css:dev', 'postcss:dev'],
-        options: {
-            spawn: false,
-        }
       }
     },
 
@@ -294,6 +287,3 @@ var PathConfig = require('./grunt-settings.js');
   grunt.registerTask('dist', ['clean:temp', 'imgmin', 'cssbeauty']);
 
 };
-
-
-
